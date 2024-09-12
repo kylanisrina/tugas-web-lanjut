@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\PortoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/profile', [ProfileController::class, 'profile']);
+Route::get('/profile/{nama}', [ProfileController::class, 'profile']);
+Route::get('/porto', [PortoController::class, 'porto']);
+
