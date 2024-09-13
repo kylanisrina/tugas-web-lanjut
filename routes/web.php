@@ -23,4 +23,3 @@ Route::get('/', function () {
 // Route::get('/profile', [ProfileController::class, 'profile']);
 Route::get('/profile/{nama}', [ProfileController::class, 'profile']);
 Route::get('/porto', [PortoController::class, 'porto']);
-
