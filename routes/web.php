@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PortoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +20,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/profile', [ProfileController::class, 'profile']);
-Route::get('/profile/{nama}', [ProfileController::class, 'profile']);
+Route::get('/profile/{nama}/{kelas}/{npm}', [ProfileController::class, 'profile']);
+Route::get('/profile', [ProfileController::class, 'profile']);
+
+Route::get('/porto', [PortoController::class, 'porto']);
+
+Route::get('/user/create', [UserController::class, 'create']);
+
+Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
 
