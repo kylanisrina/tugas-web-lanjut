@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Haloo guys</h1>
+    {{-- <h1>Haloo guys</h1> --}}
     <h1>nama: {{ $nama }}</h1>
-    {{-- <h1>nama: {{ $kelas }}</h1>
-    <h1>nama: {{ $npm }}</h1> --}}
+    <h1>nama: {{ $kelas }}</h1>
+    <h1>npm: {{ $npm }}</h1>
 </body>
 </html>
