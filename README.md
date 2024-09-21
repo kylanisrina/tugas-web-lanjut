@@ -1,17 +1,17 @@
 ## TUGAS 1
 <p align="center">
-  <img src="/asset/images/tugas1.jpg">
+  <img src="/asset/images/tugas1.png">
 </p>
 
 ## TUGAS 2
 <p align="center">
-  <img src="/asset/images/tugas2.jpg">
+  <img src="/asset/images/tugas2.png">
 </p>
 
 ## TUGAS 3
 <p align="center">
-  <img src="/asset/images/tugas3.jpg">
-  <img src="/asset/images/tugas3s.jpg">
+  <img src="/asset/images/tugas3.png">
+  <img src="/asset/images/tugas3s.png">
 </p>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
