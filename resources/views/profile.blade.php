@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +30,7 @@
             width: 300px;
             text-align: center;
             box-shadow: 1px 1px 25px 1px rgb(123, 235, 255),
-                        0 0 20px rgba(123, 235, 255, 0.4);
+                0 0 20px rgba(123, 235, 255, 0.4);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -76,8 +77,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .card {
@@ -85,14 +93,16 @@
         }
     </style>
 </head>
+
 <body>
     <div class="card">
         <img src="/asset/images/ming.jpg" alt="Profile Picture" class="profile-img">
         <div class="info">
-            <h1 class="label">{{$nama}}</h1>
+            <h1 class="label">{{ $nama }}</h1>
             <h1 class="label">{{ $npm }}</h1>
-            <h1 class="label">{{ $kelas }}</h1>
+            <h1 class="label">{{ $nama_kelas ?? 'Kelas tidak ditemukan' }}</h1>
         </div>
     </div>
 </body>
+
 </html>
