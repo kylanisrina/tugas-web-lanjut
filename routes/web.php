@@ -20,12 +20,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile/{nama}/{kelas}/{npm}', [ProfileController::class, 'profile']);
-Route::get('/profile', [ProfileController::class, 'profile']);
+// Route::get('/profile/{nama}/{kelas}/{npm}', [ProfileController::class, 'profile']);
+// Route::get('/profile', [ProfileController::class, 'profile']);
 
 Route::get('/porto', [PortoController::class, 'porto']);
 
-Route::get('/user/create', [UserController::class, 'create']);
+Route::get('/user/profile', [UserController::class, 'profile']);
+
+Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
+// Route::get('/user/create', [UserController::class, 'create']);
 
 Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
 
+Route::get('/user', [UserController::class, 'index']);
